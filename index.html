@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackendNotes</title> <link rel="stylesheet" href="style.css"> <link rel="shortcut icon" href="./favicon-modified.png" type="image/x-icon">
+</head>
+<body>   <button id="btn"> Dark Mode</button>
+    <h1 id="title">Backend Notes</h1>
+    <section id="1">
+    <a href="./app.js">Introduction to express</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Introduction to express</li>
+        <li>Serving files using express</li>
+        <li>Redirecting from one page to other in express</li>
+        <li>Serving 404page and other pages</li>
+        <li>app.get and app.use method</li>
+        <li>setting status code</li>
+    </ol></p></section>
+     
+    <section id="2">
+    <a href="./creatingAsignupPage.js">Creating a signup page</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Using and initializing authRouter(so that we can apply different methods like get,post,patch,etc)</li>
+      </ol></p></section>
+     
+    <section id="3">
+    <a href="./HooksAndValidationInMongoose.js">Hooks in mongoose&validating email and matching password with confirm password</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Initializing email validator</li>
+        <li>Validating email address with the help of email validator</li>
+        <li>validating if the password matches with confirm password</li>
+        <li>Using userSchema.pre/post to do something before and after data is saved into dataBase</li>
+        <li>Using 'this' to access data before it is going to be saved in dataBase</li>
+        <li>Using 'doc' to access data after it is going to be saved in dataBase</li>
+        <li>setting anything undefined so that it is not going to be saved in dataBase</li>
+      </ol></p></section>
+     
+    <section id="4">
+    <a href="./lecture5.js">Setting status code and redirecting without experss</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Using status code</li>
+        <li>Redirecting from one page to other</li>
+        <li>Initializing lodash library(3rd party library having many functions to make our work easy)</li>
+        <li>Using lodash library to run any function once even if it is called more then once</li>
+        <li>Using 'this' to access data before it is going to be saved in dataBase</li>
+        <li>Serving different pages using switch-case statement</li>
+        </ol></p></section>
+        
+    <section id="5">
+    <a href="./methods.js">Methods of-->Get,Post,Patch,Delete</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Initializing express</li>
+        <li>How to do any request in postman</li>
+        <li>Methods of-->Get,Post,Patch,Delete</li>
+       </ol></p></section>
+        
+    <section id="6">
+    <a href="./MiddleWareFunctions.js">MiddleWareFunctions</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Global middleware function</li>
+        <li>Path specific middleware functions</li>
+        <li>Ending request-response cycle by using middleware functions</li>
+        <li>Sending json object as response</li>
+        <li>Sending json object as response</li>
+       </ol></p></section>
+        
+    <section id="7">
+    <a href="./MountingInExpress.js">MountingInExpress</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Global middleware function</li>
+        <li>Path specific middleware functions</li>
+        <li>Ending request-response cycle by using middleware functions</li>
+        <li>Sending json object as response</li>
+       </ol></p></section>
+        
+    <section id="8">
+    <a href="./queries&Parameter.js">Queries and Parameters</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Using queries to search object</li>
+        <li>Using parameters to filter objects</li>
+         </ol></p></section>
+        
+    <section id="9">
+    <a href="./SettingStatusCode&RedirectingFromOnePageToOther.js">Redirecting withous express</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Redirecting from one page to another with node.js</li>
+       </ol></p></section>
+        
+    <section id="10">
+    <a href="./SeverCreation&httpModule.js">Creating server and http module</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Using res.write and res.end to serve data </li>
+        <li>Using req.method and req.url to see what the user has requested</li>
+       </ol></p></section>
+        
+    <section id="11">
+    <a href="./UsingMongoDbAndMongoose.js">MongoDb and Mongoose</a> 
+    <h3>Things discussed</h3>
+    <p> <ol>
+        <li>Introduction to mongoDb </li>
+        <li>About mongoDb documentation</li>
+        <li>setting up mongoose</li>
+        <li>Connectingf to mongoDb atlas server</li>
+        <li>Using await in async function</li>
+        <li>Searching data in mongoDb data base</li>
+        <li>Filtering data</li>
+        <li>Updating data in the data base</li>
+        <li>Deleting data in the data base</li>
+        <li>Defining schema for mongoose</li>
+        <li>Setting anyfield required in schema and setting minimum length of any string in schema</li>
+        <li>Generating usermodel in mongoose</li>
+       </ol></p></section>
+        
+
+</body>
+<script>let all=document.querySelector('body');
+let btn=document.querySelector("#btn");
+let title=document.querySelector("#title")
+btn.addEventListener('click',()=>{
+    if(all.style.background=='white'){
+        all.style.background='black'; 
+        all.style.color='white';
+        title.style.color='white';
+       btn.innerHTML='White Mode';
+  Array.from(document.getElementsByTagName("a")).forEach((element)=>{
+      element.style.color="#009B77";
+  });
+    }
+    else{ title.style.color='red';
+        all.style.background='white'; 
+         all.style.color='black';
+        btn.innerHTML='Dark Mode';
+        Array.from(document.getElementsByTagName("a")).forEach((element)=>{
+      element.style.color="#7700b3";
+      
+  });
+          
+    };})
+   
+     
+</script>
+</html>
